@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 //console.log(MONGODB_URI);
 //mongodb://localhost/javascriptdb
 mongoose
-  .connect(process.env.MONGODB_URI, {
+  .connect('mongodb+srv://admin:admin123@book-hmxtl.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
